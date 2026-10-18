@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRONFIT - Antrenamente & Suplimente Premium</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0A0A0C',
+                        cardBg: '#121216',
+                        cardBorder: '#1F1F26',
+                        neon: '#CCFF00',
+                        neonHover: '#B2E600'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Iconițe -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkBg text-white font-sans antialiased selection:bg-neon selection:text-black">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-cardBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-black tracking-widest uppercase flex items-center gap-2">
+                IRON<span class="text-neon">FIT</span>
+            </a>
+
+            <!-- Navigație Desktop -->
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="#servicii" class="hover:text-neon transition">Servicii</a>
+                <a href="#tarife" class="hover:text-neon transition">Abonamente</a>
+                <a href="#testimoniale" class="hover:text-neon transition">Testimoniale</a>
+                <a href="#contact" class="hover:text-neon transition">Contact</a>
+            </nav>
+
+            <!-- Buton Header -->
+            <div class="flex items-center space-x-4">
+                <a href="#contact" class="bg-neon hover:bg-neonHover text-black font-black px-5 py-2.5 rounded-xl uppercase text-xs tracking-wider transition">
+                    Încearcă Gratuit
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-24 lg:py-32 overflow-hidden border-b border-cardBorder">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#CCFF00_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center lg:text-left">
+                <span class="inline-block bg-neon/10 text-neon font-bold px-4 py-1.5 rounded-full text-xs tracking-widest uppercase border border-neon/20">
+                    Performanță Fără Limite
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none uppercase">
+                    Transformă-ți corpul. <br><span class="text-neon">Domina-ți limitele.</span>
+                </h1>
+                <p class="text-gray-400 text-lg max-w-xl mx-auto lg:mx-0">
+                    Obține rezultate garantate cu antrenamente personalizate, consultanță nutrițională și o comunitate dedicată succesului tău.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#tarife" class="bg-neon hover:bg-neonHover text-black font-black px-8 py-4 rounded-xl shadow-lg transition text-center uppercase tracking-wider">
+                        Alege Abonamentul
+                    </a>
+                    <a href="#servicii" class="border border-cardBorder hover:border-neon text-white font-bold px-8 py-4 rounded-xl transition text-center uppercase tracking-wider">
+                        Află Mai Multe
+                    </a>
+                </div>
+            </div>
+            <!-- Visual Hero Card -->
+            <div class="relative flex justify-center">
+                <div class="w-full max-w-md h-96 bg-cardBg rounded-3xl border border-cardBorder flex flex-col items-center justify-center p-8 text-center relative overflow-hidden group hover:border-neon/50 transition">
+                    <div class="w-24 h-24 bg-neon/10 rounded-full flex items-center justify-center text-neon text-4xl mb-6 border border-neon/20 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-2">Peste 1,000+ Membri</h3>
+                    <p class="text-gray-400 text-sm">Alătură-te comunității noastre și începe transformarea chiar astăzi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECȚIUNEA SERVICII -->
+    <section id="servicii" class="py-24 border-b border-cardBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Serviciile Noastre</h2>
+                <p class="text-gray-400 mt-2">Soluții complete create pentru obiectivul tău specific de fitness.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Serviciu 1 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder hover:border-neon transition group">
+                    <div class="w-14 h-14 bg-neon/10 text-neon rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-neon group-hover:text-black transition">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3">Antrenament Personal</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Sesiuni 1-la-1 cu antrenori certificați care adaptează fiecare exercițiu la nivelul și obiectivul tău.</p>
+                </div>
+                <!-- Serviciu 2 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder hover:border-neon transition group">
+                    <div class="w-14 h-14 bg-neon/10 text-neon rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-neon group-hover:text-black transition">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3">Planuri Nutriționale</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Dietă personalizată bazată pe necesarul tău caloric, creată pentru arderea grăsimilor sau creștere musculară.</p>
+                </div>
+                <!-- Serviciu 3 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder hover:border-neon transition group">
+                    <div class="w-14 h-14 bg-neon/10 text-neon rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-neon group-hover:text-black transition">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase mb-3">Clase de Grup</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Antrenamente intense de HIIT, CrossFit și Circuit Training care te alimentează cu energie și motivație.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECȚIUNEA TARIFE / ABONAMENTE -->
+    <section id="tarife" class="py-24 border-b border-cardBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Abonamente & Tarife</h2>
+                <p class="text-gray-400 mt-2">Alege pachetul potrivit pentru ritmul și stilul tău de viață.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Plan Basic -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold uppercase text-gray-400 mb-2">Starter</h3>
+                        <div class="text-4xl font-black mb-6">149 <span class="text-base font-normal text-gray-400">RON / lună</span></div>
+                        <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-neon"></i> Acces nelimitat în sală</li>
+                            <li class="flex items-center gap-3"><li class="flex items-center gap-3"><i class="fa-solid fa-check text-neon"></i> Dulap personal & Dușuri</li>
+                            <li class="flex items-center gap-3 text-gray-600"><i class="fa-solid fa-xmark"></i> Antrenor personal inclus</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full bg-cardBorder hover:bg-gray-800 text-white font-bold py-3.5 rounded-xl transition text-center uppercase text-xs tracking-wider">Alege Planul</a>
+                </div>
+
+                <!-- Plan Pro (Evidențiat) -->
+                <div class="bg-cardBg p-8 rounded-2xl border-2 border-neon relative flex flex-col justify-between shadow-[0_0_30px_rgba(204,255,0,0.15)]">
+                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-neon text-black font-black px-4 py-1 rounded-full text-xs uppercase tracking-widest">Recomandat</span>
+                    <div>
+                        <h3 class="text-lg font-bold uppercase text-neon mb-2">Pro Performance</h3>
+                        <div class="text-4xl font-black mb-6">299 <span class="text-base font-normal text-gray-400">RON / lună</span></div>
+                        <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-neon"></i> Toate beneficiile Starter</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-neon"></i> Acces la toate clasele de grup</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-neon"></i> Plan nutrițional lunar</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-neon"></i> 2 Sesiuni cu antrenor personal</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full bg-neon hover:bg-neonHover text-black font-black py-3.5 rounded-xl transition text-center uppercase text-xs tracking-wider">Alege Planul Pro</a>
+                </div>
+
+                <!-- Plan VIP -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold uppercase text-gray-400 mb-2">VIP Ultimate</h3>
+                        <div class="text-4xl font-black mb-6">499 <span class="text-base font-normal text-gray-400">RON / lună</span></div>
+                        <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-neon"></i> Acces 24/7 VIP</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-neon"></i> Antrenor personal dedicat (8 ședințe)</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-neon"></i> Suplimente de bază incluse</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full bg-cardBorder hover:bg-gray-800 text-white font-bold py-3.5 rounded-xl transition text-center uppercase text-xs tracking-wider">Alege VIP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECȚIUNEA TESTIMONIALE -->
+    <section id="testimoniale" class="py-24 border-b border-cardBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight">Părerea Membrilor</h2>
+                <p class="text-gray-400 mt-2">Rezultate reale obținute de oameni obișnuiți.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder space-y-4">
+                    <div class="flex text-neon text-sm space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic text-sm">"Am slăbit 12 kg în doar 3 luni cu ajutorul planului Pro Performance. Antrenorii sunt extrem de dedicați!"</p>
+                    <div class="pt-4 border-t border-cardBorder flex items-center gap-3">
+                        <div class="w-10 h-10 bg-neon/20 rounded-full flex items-center justify-center font-bold text-neon text-sm">AM</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Andrei M.</h4>
+                            <span class="text-xs text-gray-500">Membru de 6 luni</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder space-y-4">
+                    <div class="flex text-neon text-sm space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic text-sm">"Atmosfera din sală este incendiară! Echipamentele sunt noi, iar curățenia este impecabilă de fiecare dată."</p>
+                    <div class="pt-4 border-t border-cardBorder flex items-center gap-3">
+                        <div class="w-10 h-10 bg-neon/20 rounded-full flex items-center justify-center font-bold text-neon text-sm">EL</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Elena L.</h4>
+                            <span class="text-xs text-gray-500">Membru de 1 an</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-cardBg p-8 rounded-2xl border border-cardBorder space-y-4">
+                    <div class="flex text-neon text-sm space-x-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 italic text-sm">"Planul nutrițional combinat cu suplimentele recomandate au făcut o diferență uriașă în masa mea musculară."</p>
+                    <div class="pt-4 border-t border-cardBorder flex items-center gap-3">
+                        <div class="w-10 h-10 bg-neon/20 rounded-full flex items-center justify-center font-bold text-neon text-sm">CR</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Cristian R.</h4>
+                            <span class="text-xs text-gray-500">Membru VIP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULAR DE CONTACT -->
+    <section id="contact" class="py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-cardBg p-8 sm:p-12 rounded-3xl border border-cardBorder">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <h2 class="text-3xl font-black uppercase tracking-tight">Contactează-ne</h2>
+                    <p class="text-gray-400 mt-2 text-sm">Ai întrebări? Programează o ședință de antrenament gratuită completând formularul de mai jos.</p>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Nume Complet</label>
+                            <input type="text" placeholder="Ion Popescu" class="w-full bg-darkBg border border-cardBorder rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-neon text-sm transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Adresă Email</label>
+                            <input type="email" placeholder="ion@example.com" class="w-full bg-darkBg border border-cardBorder rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-neon text-sm transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Abonament Dorit</label>
+                        <select class="w-full bg-darkBg border border-cardBorder rounded-xl px-4 py-3.5 text-gray-400 focus:outline-none focus:border-neon text-sm transition">
+                            <option>Plan Starter (149 RON)</option>
+                            <option>Plan Pro Performance (299 RON)</option>
+                            <option>Plan VIP Ultimate (499 RON)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Mesajul Tău</label>
+                        <textarea rows="4" placeholder="Spune-ne mai multe despre obiectivul tău..." class="w-full bg-darkBg border border-cardBorder rounded-xl px-4 py-3.5 text-white placeholder-gray-600 focus:outline-none focus:border-neon text-sm transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-neon hover:bg-neonHover text-black font-black py-4 rounded-xl uppercase text-xs tracking-widest transition">
+                        Trimite Solicitarea
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-darkBg border-t border-cardBorder py-12 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <a href="#" class="text-xl font-black tracking-widest uppercase text-white inline-block">
+                IRON<span class="text-neon">FIT</span>
+            </a>
+            <p>&copy; 2026 IRONFIT. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
